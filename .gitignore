@@ -5,11 +5,14 @@
 .config/FreeTube/
 .config/syncthing/
 .config/transmission/
+.emacs.d/
 .linuxmint/
 .local/share/
 .mozilla/
 .rustup/
+.ssh/
 .thunderbird/
+.xsession*
 books/
 data
 dotfiles/
