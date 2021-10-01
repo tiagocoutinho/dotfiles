@@ -5,7 +5,9 @@
 .config/FreeTube/
 .config/syncthing/
 .config/transmission/
+.config/xed/
 .emacs.d/
+.gitconfig
 .linuxmint/
 .local/share/
 .mozilla/
@@ -25,3 +27,4 @@ Pictures/
 tmp/
 Videos/
 workspace/
+.X*
