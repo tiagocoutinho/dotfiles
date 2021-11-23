@@ -6,6 +6,10 @@ function gcfg
     /usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME $argv
 end
 
+function pygr --wraps=egrep\ -rn\ --include\ \\\*.py --description 'grep recursively in python files'
+  egrep -rn --include \*.py $argv;
+end
+
 starship init fish | source
 
 # >>> conda initialize >>>
