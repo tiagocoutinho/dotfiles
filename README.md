@@ -49,6 +49,7 @@ git-gui
 codium
 syncthing
 docker.io
+docker-compose
 gimp
 fish
 htop
