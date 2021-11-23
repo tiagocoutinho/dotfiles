@@ -23,6 +23,7 @@
 (tooltip-mode -1)
 
 (set-face-attribute 'default nil :font "DejaVu Sans Mono-12")
+;; (set-face-attribute 'default nil :font "BitstreamVeraSansMono Nerd Font Mono-12")
 
 ;; Nobody likes to have to type out the full yes or no when Emacs asks.
 ;; Which it does often. Make it one character.
@@ -129,6 +130,9 @@
   :init (doom-modeline-mode 1))
 (setq doom-modeline-height 15)
 (setq doom-modeline-bar-width 1)
+
+(use-package all-the-icons
+  :if (display-graphic-p))
 
 ;; Great themes from doom: one, gruvbox, nord, palenight
 ;; https://peach.melpa.org for theme catalog
