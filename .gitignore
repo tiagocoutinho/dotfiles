@@ -11,6 +11,8 @@
 .config/transmission/
 .config/VSCodium/
 .config/xed/
+.config/google-chrome/
+.config/chromium/
 .emacs.d/
 .gitconfig
 .ipython/
@@ -29,10 +31,12 @@ Camera/
 Desktop/
 Documents/
 Downloads/
+Fonts/
 Music/
 Pictures/
-tmp/
 Videos/
+miniconda/
+tmp/
 workspace/
 .X*
 .zoom/
