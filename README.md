@@ -60,6 +60,8 @@ cmake               # alacritty
 g++                 # alacritty
 libfontconfig1-dev  # alacritty
 libxcb-shape0-dev   # alacritty
+libxcb-render0-dev  # alacritty
+libxcb-xfixes0-dev  # alacritty
 ```
 
 ### Rust
