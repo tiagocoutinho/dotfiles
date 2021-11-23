@@ -11,6 +11,7 @@ function pygr --wraps=egrep\ -rn\ --include\ \\\*.py --description 'grep recursi
 end
 
 starship init fish | source
+zoxide init fish | source
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
