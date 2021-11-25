@@ -44,6 +44,7 @@ echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://
 
 ```
 openssh-server
+sshfs
 git
 git-gui
 codium
@@ -54,7 +55,8 @@ gimp
 fish
 htop
 emacs
-n
+nvim
+vlc
 libc-dev            # starship
 libssl-dev          # starship
 cmake               # alacritty 
