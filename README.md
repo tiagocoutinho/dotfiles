@@ -90,3 +90,41 @@ cargo install starship alacritty zoxide exa
 
 Edit `/etc/passwd` and replace your user `/bin/bash` with `/usr/bin/fish`
 
+### Docker
+
+Edit `/etc/docker/daemon.json`
+
+```json
+{
+  "features": {"buildkit" : true},
+  "data-root": "/home/docker/data",
+  "insecure-registries" : []
+}
+```
+
+* The first line enables BuildKit which allows for faster builds
+* The second line relocates docker storage in case you don't have enough space
+  in the default */var/lib/docker/*
+* Add any additional docker registries
+
+You will need to restart docker service after these changes. Do it with
+
+```bash
+sudo systemctl restart docker.service
+```
+
+#### Docker compose
+
+This repo contains a *.config/fish/fish_variables* file which already includes
+COMPOSE_DOCKER_CLI_BUILD so you only need to do the instructions below if you
+don't use it.
+
+To enable BuildKit on docker compose do:
+
+If using fish do:
+
+```fish
+set -Ux COMPOSE_DOCKER_CLI_BUILD 1
+```
+
+otherwise set it in `~/.bashrc` for example.
