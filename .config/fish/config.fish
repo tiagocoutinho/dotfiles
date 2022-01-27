@@ -10,6 +10,23 @@ function pygr --wraps=egrep\ -rn\ --include\ \\\*.py --description 'grep recursi
   egrep -rn --include \*.py $argv;
 end
 
+function apt-up --description 'apt update + upgrade'
+  sudo apt update && sudo apt upgrade
+end
+function apt-upd --description 'apt update'
+  sudo apt update
+end
+function apt-upg --description 'apt upgrade'
+  sudo apt upgrade
+end
+function apt-in --description 'apt install'
+  sudo apt install $argv
+end
+function apt-rm --description 'apt remove'
+  sudo apt remove $argv
+end
+
+
 starship init fish | source
 zoxide init fish | source
 
