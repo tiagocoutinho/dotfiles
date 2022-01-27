@@ -15,7 +15,7 @@ zoxide init fish | source
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-eval /data/miniconda/bin/conda "shell.fish" "hook" $argv | source
+eval /home/coutinho/miniconda/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
 set PATH $HOME/.local/bin $PATH
