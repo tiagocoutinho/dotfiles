@@ -18,3 +18,4 @@ zoxide init fish | source
 eval /data/miniconda/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
+set PATH $HOME/.local/bin $PATH
