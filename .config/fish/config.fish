@@ -1,5 +1,5 @@
 function fish_greeting
-#    echo Logged in to (set_color blue;echo $hostname;set_color normal) at (set_color yellow;date +%T;set_color normal)
+    echo Logged in to (set_color blue;echo $hostname;set_color normal) at (set_color yellow;date +%T;set_color normal)
 end
 
 function gcfg
@@ -24,6 +24,22 @@ function apt-in --description 'apt install'
 end
 function apt-rm --description 'apt remove'
   sudo apt remove $argv
+end
+
+function .. --description 'go up 1 level in directory'
+  cd ..
+end
+function .1 --description 'go up 1 level in directory'
+  cd ..
+end
+function .2 --description 'go up 2 levels in directory'
+  cd ../..
+end
+function .3 --description 'go up 3 levels in directory'
+  cd ../../..
+end
+function .4 --description 'go up 4 levels in directory'
+  cd ../../../..
 end
 
 
