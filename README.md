@@ -57,9 +57,10 @@ htop
 emacs
 nvim
 vlc
+tree
 libc-dev            # starship
 libssl-dev          # starship
-cmake               # alacritty 
+cmake               # alacritty
 g++                 # alacritty
 libfontconfig1-dev  # alacritty
 libxcb-shape0-dev   # alacritty
