@@ -192,6 +192,20 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
+(use-package docker
+  :ensure t
+  :bind ("C-c d" . docker))
+
+(use-package dockerfile-mode
+  :ensure t
+  :mode
+  ("Dockerfile\\'" . dockerfile-mode)
+  :config
+  (setq-default docker-use-sudo nil))
+
+(use-package markdown-mode)
+
+(use-package yaml-mode)
 
 ;; ===
 ;; LSP
@@ -239,7 +253,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (python-black python-mode use-package rust-mode lsp-ui lsp-pyright lsp-jedi lsp-ivy jedi ivy-rich flycheck-rust flycheck-pyflakes doom-themes doom-modeline counsel))))
+    (yaml-mode dockerfile-mode docker python-black python-mode use-package rust-mode lsp-ui lsp-pyright lsp-jedi lsp-ivy jedi ivy-rich flycheck-rust flycheck-pyflakes doom-themes doom-modeline counsel))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
