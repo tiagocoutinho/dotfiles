@@ -3,9 +3,12 @@
 .cargo/
 .cinnamon/
 .config/FreeTube/
+.config/GIMP/
 .config/ibus/
 .config/libreoffice/
+.config/MongoDB Compass/
 .config/pulse/
+.config/session/
 .config/Slack/
 .config/syncthing/
 .config/transmission/
@@ -13,12 +16,18 @@
 .config/xed/
 .config/google-chrome/
 .config/chromium/
+.devpi/
 .emacs.d/
 .gitconfig
 .ipython/
+.kivy/
 .linuxmint/
-.local/share/
+.local/
+.mongodb/
 .mozilla/
+.npm/
+.nv/
+.pylint.d/
 .rustup/
 .ssh/
 .thunderbird/
