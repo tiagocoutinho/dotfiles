@@ -84,7 +84,17 @@ sh ./Miniconda3-latest-Linux-x86_64.sh
 ### Local packages
 
 ```bash
-cargo install starship alacritty zoxide exa
+# prompt niceness
+cargo install starship
+
+# alternative terminal
+cargo install alacritty
+
+# alternatives to cd, ls
+cargo install zoxide exa
+
+# monitoring tools (alternative to top)
+cargo install bb ytop bottom battop
 ```
 
 ### Switch shell to fish
