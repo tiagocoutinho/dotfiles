@@ -95,6 +95,9 @@ cargo install zoxide exa
 
 # monitoring tools (alternative to top)
 cargo install bb ytop bottom battop
+
+# git helpers:
+cargo install delta
 ```
 
 ### Switch shell to fish
